@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/img/diamod.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Challenge I Alura</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="logo">
+                <img class="logoImg" src="/img/logo.png" alt="Logo Alura">
+                <h1 class="tittle">Encriptador de Mensajes</h1>
+            </div>
+            <div class="leftPanel">
+                <input type="text" class="textInput" id="inputTexto" placeholder="Inserte aqui su texto" autofocus required>
+            </div>
+            <div class="rigthPanel">
+                <img class="imgMunheco" src="/img/munheco.png" id="imgMunheco" alt="Imagen de relleno">
+                <h1 class="texto" id="texto">Ningun mensaje fue encontrado</h1>
+                <textarea class="texto2" id="texto2" name="texto" rows="8" cols="80">Ingrese texto que desea encriptar o desencriptar</textarea>
+                <button id="copiar" type="button" name="button" onclick="copiar()">Copiar</button>
+
+            </div>
+            <div class="leftButton">
+                <p>Solo letras minusculas y sin acentos</p>
+                <button type="button" id="encriptarBtn" value="encriptar" onclick="encriptar()">Encriptar</button>
+                <button type="button" id="desencriptarBtn" value="desencriptar" onclick="desencriptar()">Desencriptar</button>
+                <button type="button" id="limpiarBtn" value="limpiar" onclick="limpiar()">Limpiar</button>
+
+            </div>
+
+
+        </div>
+    </main>
+    <script type="text/javascript" src="/script.js"></script>
+</body>
+<footer>
+    <p>Desarrollado por Francisco Mastri</p>
+
+</footer>
+
+</html>
